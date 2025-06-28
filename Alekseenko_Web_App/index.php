@@ -23,7 +23,7 @@
                                 ?>
                                 <h1>Посты</h1>
                                 <?php
-                                $link = mysqli_connect('10.15.100.3', 'root', '123456', 'bd_name');
+                                $link = mysqli_connect('172.18.0.2', 'root', '123456', 'bd_name');
                                 $sql = "SELECT * FROM posts";
                                 $res = mysqli_query($link, $sql);
                                 if (mysqli_num_rows($res) >  0) {

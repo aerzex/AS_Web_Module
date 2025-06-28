@@ -72,6 +72,6 @@
     <?php
     require_once('bd.php');
 
-    $link = mysqli_connect('10.15.100.3', 'root', '123456', 'bd_name');
+    $link = mysqli_connect('172.18.0.2', 'root', '123456', 'bd_name');
 
     ?>
