@@ -45,7 +45,7 @@ require_once('bd.php');
 $link = mysqli_connect('db', 'root', '123456', 'bd_name');
 
 if (isset($_COOKIE['User'])) {
-    header("Location: profile.php");
+    header("Location: /profile.php");
 }
 
 if (isset($_POST['submit'])) {

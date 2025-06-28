@@ -25,7 +25,7 @@
                         <div class="row reg">
                             <input class="form-control" type="password" name="password" placeholder="Password">
                         </div>
-                        <button type="submit" class="mabatton" name="submit">Продолжить</button>
+                        <button type="submit" class="mabatton" name="submit" value="continue">Продолжить</button>
                     </form>
                 </div>
             </div>
