@@ -7,7 +7,7 @@ RUN apt-get update && apt-get -y install apache2 php libapache2-mod-php php-mysq
 
 RUN rm -rf /var/www/html/*
 COPY ./Alekseenko_Web_App/* /var/www/html
-RUN chown -R www_data:www_data /var/www/html/
+RUN chown -R www-data:www-data /var/www/html/
 
 RUN a2enmod rewrite
 
