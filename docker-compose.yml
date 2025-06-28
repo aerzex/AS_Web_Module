@@ -16,7 +16,8 @@ services:
     depends_on:
       - db
     networks:
-      - custom_network 
+      custom_network:
+        ipv4_address: 172.18.0.3 
 
   db:
     image: mariadb
@@ -28,11 +29,16 @@ services:
     volumes:
       - db_data:/var/lib/mysql
     networks:
-      - custom_network 
+      custom_network:
+        ipv4_address: 172.18.0.2 
 
 networks:
   custom_network:
     driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.0.0/16
+          gateway: 172.18.0.1
 
 volumes:
   db_data:
